@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Page</title>
+    <link rel="stylesheet" href="wall.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <h1>My Wallet</h1>
+        <div class="balance">
+            <h2>Balance: $<span id="balance">0.00</span></h2>
+        </div>
+        <div class="actions">
+            <div class="action">
+                <label for="add-amount">Add Money:</label>
+                <input type="number" id="add-amount" placeholder="Enter amount">
+                <button onclick="addMoney()">Add</button>
+            </div>
+            <div class="action">
+                <label for="get-amount">Get Money:</label>
+                <input type="number" id="get-amount" placeholder="Enter amount">
+                <button onclick="getMoney()">Get</button>
+            </div>
+        </div>
+    </div>
+    <script src="wall.js"></script>
+</body>
+</html>
